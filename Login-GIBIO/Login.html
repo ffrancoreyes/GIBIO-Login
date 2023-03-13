@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Login-GIBIO/Style/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <title>GIBIO - Inicia sesión o Regístrate</title>
+</head>
+<body>
+    <div class="container" id="container">
+
+        <!--Crea una cuenta -->
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Crear una cuenta</h1>
+
+                <!--Logo GIBIO-->
+                <div class="social-container">
+                    
+                    <img src="/Login-GIBIO/Style/Images/logo-GIBIO.png" alt="Logo de GIBIO" class="img-logo" href="#"> 
+                </div>
+
+                <!--Casilla para ingresar los datos de registro-->
+                <span>Ingrese sus datos</span>
+                <input type="text" placeholder="Nombre" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Contraseña" />
+                <button class="btn-form">Crea una cuenta</button>
+            </form>
+        </div>
+
+        <!--Inicia Sesión-->
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <!--Logo GIBIO-->
+                <h1>Inicia Sesión</h1>
+                <div class="social-container">
+                    <img src="/Login-GIBIO/Style/Images/logo-GIBIO.png" alt="Logo de GIBIO" class="img-logo" href="#"> 
+                </div>
+                <span>Ingrese su correo y contraseña</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Contraseña" />
+                <a href="#">Olvidó su contraseña?</a>
+                <button class="btn-form">Iniciar Sesión</button>
+            </form>
+        </div>
+
+        <!--caja Inicia sesión izquierda-->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Bienvenido de nuevo a GIBIO!</h1>
+                    <p>Ya tienes una cuenta? Inicia Sesión</p>
+                    <button class="ghost" id="signIn">Iniciar Sesión</button>
+                </div>
+                <!--Caja crea una cuenta derecha-->
+
+                <div class="overlay-panel overlay-right">
+                    <h1>Bienvenido a GIBIO!</h1>
+                    <p>No tienes una cuenta? Crea una!</p>
+                    <button class="ghost" id="signUp">Crea una cuenta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/Login-GIBIO/Js/Login.js"></script>
+</body>
+</html>
